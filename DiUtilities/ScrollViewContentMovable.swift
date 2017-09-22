@@ -9,12 +9,25 @@
 import Foundation
 
 public protocol ScrollViewContentMovableProtocol {
-    var movableScrollView: UIScrollView? { get set }
-    func setupScrollViewContentMovableProtocol(with scrollView: UIScrollView)
+    var movableScrollView: UIScrollView { get set }
+    func setupObservers()
 }
 
-public extension ScrollViewContentMovableProtocol where Self: UIViewController {
-    mutating func setupScrollViewContentMovableProtocol(with scrollView: UIScrollView) {
-        movableScrollView = scrollView
+public extension ScrollViewContentMovableProtocol where Self: UIViewController { 
+    public func setupObservers() {
+        NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: nil) { [weak self] notification in
+            self?.keyboardWillShow(notification)
+        }
+        NotificationCenter.default.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: nil) { [weak self] notification in
+            self?.keyboardWillHide(notification)
+        }
+    }
+    
+    public func keyboardWillShow(_ notification: Notification) {
+        
+    }
+    
+    public func keyboardWillHide(_ notification: Notification) {
+        
     }
 }

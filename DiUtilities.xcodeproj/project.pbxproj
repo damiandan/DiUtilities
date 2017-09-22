@@ -11,6 +11,7 @@
 		C03E5EFD1F757FBF00FFC201 /* DiUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E5EFC1F757FBF00FFC201 /* DiUtilitiesTests.swift */; };
 		C03E5EFF1F757FBF00FFC201 /* DiUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C03E5EF11F757FBF00FFC201 /* DiUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C03E5F091F75904A00FFC201 /* ScrollViewContentMovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E5F081F75904A00FFC201 /* ScrollViewContentMovable.swift */; };
+		C03E5F0D1F7596D100FFC201 /* xtzvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E5F0C1F7596D100FFC201 /* xtzvViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		C03E5EFC1F757FBF00FFC201 /* DiUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiUtilitiesTests.swift; sourceTree = "<group>"; };
 		C03E5EFE1F757FBF00FFC201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C03E5F081F75904A00FFC201 /* ScrollViewContentMovable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewContentMovable.swift; sourceTree = "<group>"; };
+		C03E5F0C1F7596D100FFC201 /* xtzvViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = xtzvViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				C03E5EF11F757FBF00FFC201 /* DiUtilities.h */,
 				C03E5EF21F757FBF00FFC201 /* Info.plist */,
 				C03E5F081F75904A00FFC201 /* ScrollViewContentMovable.swift */,
+				C03E5F0C1F7596D100FFC201 /* xtzvViewController.swift */,
 			);
 			path = DiUtilities;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03E5F0D1F7596D100FFC201 /* xtzvViewController.swift in Sources */,
 				C03E5F091F75904A00FFC201 /* ScrollViewContentMovable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
