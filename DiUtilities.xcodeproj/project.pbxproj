@@ -10,6 +10,7 @@
 		C03E5EF81F757FBF00FFC201 /* DiUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03E5EEE1F757FBF00FFC201 /* DiUtilities.framework */; };
 		C03E5EFD1F757FBF00FFC201 /* DiUtilitiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E5EFC1F757FBF00FFC201 /* DiUtilitiesTests.swift */; };
 		C03E5EFF1F757FBF00FFC201 /* DiUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C03E5EF11F757FBF00FFC201 /* DiUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C03E5F091F75904A00FFC201 /* ScrollViewContentMovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03E5F081F75904A00FFC201 /* ScrollViewContentMovable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		C03E5EF71F757FBF00FFC201 /* DiUtilitiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiUtilitiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C03E5EFC1F757FBF00FFC201 /* DiUtilitiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiUtilitiesTests.swift; sourceTree = "<group>"; };
 		C03E5EFE1F757FBF00FFC201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C03E5F081F75904A00FFC201 /* ScrollViewContentMovable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewContentMovable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				C03E5EF11F757FBF00FFC201 /* DiUtilities.h */,
 				C03E5EF21F757FBF00FFC201 /* Info.plist */,
+				C03E5F081F75904A00FFC201 /* ScrollViewContentMovable.swift */,
 			);
 			path = DiUtilities;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					C03E5EED1F757FBF00FFC201 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = JZM8CWX453;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					C03E5EF61F757FBF00FFC201 = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03E5F091F75904A00FFC201 /* ScrollViewContentMovable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +329,7 @@
 		C03E5F031F757FBF00FFC201 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JZM8CWX453;
@@ -336,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.di.DiUtilities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,6 +350,7 @@
 		C03E5F041F757FBF00FFC201 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JZM8CWX453;
@@ -362,6 +370,7 @@
 		C03E5F061F757FBF00FFC201 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = JZM8CWX453;
 				INFOPLIST_FILE = DiUtilitiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +383,7 @@
 		C03E5F071F757FBF00FFC201 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = JZM8CWX453;
 				INFOPLIST_FILE = DiUtilitiesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
