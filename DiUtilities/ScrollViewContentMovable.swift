@@ -8,6 +8,13 @@
 
 import Foundation
 
-protocol ScrollViewContentMovableProtocol {
+public protocol ScrollViewContentMovableProtocol {
+    var movableScrollView: UIScrollView? { get set }
     func setupScrollViewContentMovableProtocol(with scrollView: UIScrollView)
+}
+
+public extension ScrollViewContentMovableProtocol where Self: UIViewController {
+    mutating func setupScrollViewContentMovableProtocol(with scrollView: UIScrollView) {
+        movableScrollView = scrollView
+    }
 }
